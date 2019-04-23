@@ -5,25 +5,33 @@ import Router from 'vue-router'
 import Login from '@/components/Login'
 import Home from '@/components/Home'
 import Welcome from '@/components/Welcome'
+import User from '@/components/User'
 
 Vue.use(Router)
 
 const router = new Router({
-  routes: [
-    {
+  routes: [{
       path: '/',
       redirect: '/home'
     },
     {
       path: '/Login',
       component: Login
-    }, 
+    },
     {
       // 手册登录就会默认显示的组件(页面)
       path: '/home',
       component: Home,
       redirect: '/welcome',
-      children: [{ path: '/welcome', component: Welcome },]
+      children: [{
+          path: '/welcome',
+          component: Welcome
+        },
+        {
+          path: '/users',
+          component: User
+        }
+      ]
     }
   ]
 })
