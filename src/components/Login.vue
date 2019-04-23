@@ -7,12 +7,12 @@
       <el-form :rules="loginFormRules" ref="loginFormRef" :model="loginForm">
         <el-form-item prop="username">
           <el-input v-model="loginForm.username">
-            <i slot="prefix" class="iconfont icon-tubiao211"></i>
+            <i slot="prefix" class="iconfont icon-user"></i>
           </el-input>
         </el-form-item>
         <el-form-item prop="password">
-          <el-input v-model="loginForm.password">
-            <i slot="prefix" class="iconfont icon-mima"></i>
+          <el-input v-model="loginForm.password" show-password>
+            <i slot="prefix" class="iconfont icon-3702mima"></i>
           </el-input>
         </el-form-item>
         <el-row>
