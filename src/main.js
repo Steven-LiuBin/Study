@@ -19,7 +19,7 @@ Vue.use(ElementUI)
 // axios配置
 axios.defaults.baseURL = 'http://127.0.0.1:11333/api/private/v1/'
 
-axios.interceptors.request.use(function(config) {
+axios.interceptors.request.use(function (config) {
   console.dir(axios)
   console.dir(config)
   // 给axios配置token
@@ -28,7 +28,7 @@ axios.interceptors.request.use(function(config) {
     config.headers.Authorization = token
   }
   return config
-}, function(error) {
+}, function (error) {
   return Promise.reject(error)
 })
 
