@@ -5,9 +5,24 @@ body,
   margin: 0;
   padding: 0;
 }
-.el-submenu__title,.el-menu-item{
-  font-size:13px;
+
+.el-submenu__title,
+.el-menu-item {
+  font-size: 13px;
 }
-i.iconfont{
-  margin-right:10px;
+
+i.iconfont {
+  margin-right: 10px;
+}
+
+/* 卡片区公共样式 */
+.box-card {
+  margin-top: 15px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+/* 表格、分页公共样式 */
+.el-table, .el-pagination {
+  margin-top: 15px;
+  font-size: 12px;
 }
